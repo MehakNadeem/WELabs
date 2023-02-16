@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Contacts</title>
+</head>
+<body>
+<h1 style="text-align: center">
+    Contact List
+</h1>
+<table border="4">
+    <tr>
+        <th>Name</th>
+        <th>Mobile#</th>
+        <th>City</th>
+        <th>Profession</th>
+    </tr>
+    {% for item in data %}
+    <tr>
+        <td>{{item['name']}}</td>
+        <td>{{item['mobileno']}}</td>
+        <td>{{item['city']}}</td>
+        <td>{{item['profession']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h2>{{ msg }}</h2>
+</body>
+</html>

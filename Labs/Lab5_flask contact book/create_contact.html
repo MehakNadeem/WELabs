@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Contact</title>
+</head>
+<body>
+<a href="/showcontacts">Show Contacts</a>
+<a href="/getContact">Search Contacts</a>
+<div>
+    <h1>Create Contact</h1>
+</div>
+<div>
+    <form action="/createContact" method = "POST">
+        <label>Enter Name:</label>
+        <input type="text" name="name" placeholder="Your Name Here">
+        <br><br>
+        <label>Enter Mobile no.</label>
+        <input type="tel" name="mobileno" placeholder="Your Mobile no Here">
+        <br><br>
+        <label>Enter City:</label>
+        <input type="text" name="city" placeholder="Your City Here">
+        <br><br>
+        <label>Enter Profession:</label>
+        <input type="text" name="profession" placeholder="Your Profession Here">
+        <br><br>
+        <input type="submit" name="submit" value="Create">
+    </form>
+    <h2>{{ msg }}</h2>
+</div>
+
+</body>
+</html>
